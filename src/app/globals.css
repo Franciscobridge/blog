@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-prussian-blue: #132043;
+  --color-prussian-100: #EFEFEF;
+  --color-prussian-200: #626E7E;
+  --color-prussian-300: #3D495A;
+  --color-prussian-500: #2B7EFE;
+  --color-prussian-600: #1A46AD;
+  --color-prussian-700: #112847;
+  --color-prussian-800: #0D1E32;
+  --color-prussian-900: #0B141B;
+  --color-prussian-950: #172027;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --breakpoint--lg: 66.875rem;
+  --breakpoint-2lg: 73rem;
+  --breakpoint-3lg: 75rem;
+  --breakpoint-2xl: 83rem;
+  --breakpoint-3xl: 86rem;
+}
+
+
