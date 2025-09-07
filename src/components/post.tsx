@@ -8,6 +8,7 @@ import { FaRegMessage } from "react-icons/fa6";
 import { IPost } from "@/utils/data";
 import { useState } from "react";
 import { buscarIniciais } from "@/utils/buscarIniciais";
+import { formatarData } from "@/utils/formatarData";
 
 export interface PostProps {
   post: IPost
@@ -29,7 +30,7 @@ export function Post({ post }: PostProps) {
           </Avatar>
           <div className="flex flex-col">
             <h1 className="font-bold text-base">{post.author}</h1>
-            <p className="text-base text-prussian-200 -mt-1">sem data</p>
+            <p className="text-sm text-prussian-100/50 -mt-1">{formatarData(post.created_at)}</p>
           </div>
         </div>
         <button className="size-8 items-center justify-center flex duration-200 transition hover:bg-prussian-300/30 rounded-lg">
